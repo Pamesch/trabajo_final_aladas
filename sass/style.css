@@ -1,0 +1,267 @@
+.imagenLogo {
+  width: 100%;
+  display: flex;
+}
+
+header div {
+  background-color: rgba(173, 170, 172, 0.2);
+}
+
+header div a {
+  font-family: bellerose light;
+  padding: 20px;
+}
+
+@media (min-width: 1200px) {
+  #menu_desplegable {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  #nav_horizontal {
+    display: none;
+  }
+}
+
+.tituloEspacio {
+  font-family: cavalier;
+  font-size: 3em;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  padding-left: 20px;
+}
+
+.imagenEntrega {
+  grid-area: "imagen";
+}
+
+.textoDescripcion {
+  grid-area: "texto_desc";
+}
+
+.textoDescripcion {
+  display: flex;
+  align-items: center;
+  font-family: bellerose light;
+  font-size: 1.5em;
+}
+
+@media (min-width: 1200px) {
+  #nuestraHistoria {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: "imagen texto_desc";
+  }
+  .imagenEntrega {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #nuestraHistoria {
+    display: grid;
+    width: 100%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "imagen" "texto_desc";
+  }
+  .imagenEntrega {
+    width: 100%;
+    padding: 5px;
+  }
+}
+
+.cajaTexto {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  align-content: center;
+}
+
+.imagenEntrega {
+  display: flex;
+  align-items: center;
+}
+
+.botonHome {
+  border-radius: 20px;
+  font-family: bellerose light;
+  font-size: 1.3em;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  color: #606060;
+}
+
+.menu {
+  padding-left: 10px;
+}
+
+.imagenLogo {
+  display: inline;
+  float: right;
+}
+
+.parrafoSecundario {
+  display: flex;
+  align-content: center;
+  font-family: bellerose light;
+  font-size: 1.5em;
+  margin: 1em;
+  padding: 1em;
+  justify-content: center;
+}
+
+/*grid pagina nuestroespacio*/
+.tituloEspacio {
+  grid-area: tituloEspacio;
+}
+
+.parrafoSecundario {
+  grid-area: parrafoSecundario;
+}
+
+.googleMap {
+  grid-area: mapa;
+}
+
+.imagenesEspacio {
+  grid-area: imagenesEspacio;
+}
+
+.direccion {
+  grid-area: direccion;
+}
+
+footer {
+  grid-area: footer;
+}
+
+@media (min-width: 1200px) {
+  #Espacio {
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "imagenesEspacio parrafoSecundario" "imagenesEspacio mapa";
+  }
+}
+
+.imagenesEspacio {
+  display: flex;
+  flex-direction: column;
+}
+
+.direccion {
+  display: flex;
+  background-color: #f2e2dc;
+  margin: 5px;
+  padding: 15px;
+  font-family: Bellerose light;
+  font-size: 20px;
+  color: #606060;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.googleMap {
+  margin: 1em;
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+  #Espacio {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "parrafoSecundario" "imagenesEspacio " "imagenesEspacio"  "mapa";
+  }
+}
+
+span {
+  padding: 1.5em;
+}
+
+.formulario {
+  margin-left: 1em;
+}
+
+span {
+  padding-left: 2em;
+  grid-area: formulario;
+}
+
+.parrafoContacto {
+  grid-area: texto;
+}
+
+@media (min-width: 1200px) {
+  #columnasContacto {
+    display: grid;
+    padding: 25px;
+    grid-template-columns: auto auto;
+    grid-template-areas: "texto formulario";
+  }
+}
+
+.instagram {
+  background-color: rgba(240, 199, 124, 0.192);
+}
+
+.facebook {
+  background-color: rgba(157, 157, 228, 0.404);
+}
+
+.whatsapp {
+  background-color: rgba(193, 236, 193, 0.432);
+}
+
+footer {
+  padding: 0px 0px 10px 0px;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: rgba(242, 220, 242, 0.719);
+  border-radius: 15px;
+  height: 4em;
+  align-items: center;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer ul li button {
+  border-radius: 1em;
+  font-family: bellerose light;
+  font-size: 1.5em;
+  padding: 5px 20px 20px 20px;
+  text-align: center;
+  position: center;
+  text-decoration-color: black;
+  text-decoration: none;
+}
+
+div ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+div ul li {
+  display: inline-flex;
+  align-items: center;
+  list-style: none;
+  align-content: center;
+  padding-top: 15px;
+}
+
+div ul li a {
+  font-family: cavalier;
+  text-decoration: none;
+  font-size: 35px;
+}

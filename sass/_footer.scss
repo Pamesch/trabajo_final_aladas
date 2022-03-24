@@ -1,0 +1,40 @@
+$redes:(
+    instagram: rgba(240, 199, 124, 0.192),
+    facebook: rgba(157, 157, 228, 0.404),
+    whatsapp: rgba(193, 236, 193, 0.432),
+);
+
+@each $red, $color in $redes {
+    .#{$red}{
+        background-color: $color;
+    }
+    
+}
+footer {
+    padding: 0px 0px 10px 0px;
+    
+    ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgba(242, 220, 242, 0.719);
+    border-radius: 15px;
+    height: 4em;
+    align-items: center;
+        li{
+        list-style: none;
+       
+            button{
+            border-radius: 1em;
+            font-family: bellerose light;
+            font-size: 1.5em;
+            padding: 5px 20px 20px 20px;
+            text-align: center;
+            position: center;
+            text-decoration-color: black;
+            text-decoration: none;
+
+            }
+        }
+    }
+}
